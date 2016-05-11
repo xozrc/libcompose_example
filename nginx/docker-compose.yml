@@ -1,0 +1,8 @@
+nginx:
+    image: nginx:1.10.0-alpine
+    volumes:
+        - /var/www:/usr/share/nginx/html:ro
+        - /var/nginx/conf:/etc/nginx:ro
+    ports:
+        - "80:80"
+
